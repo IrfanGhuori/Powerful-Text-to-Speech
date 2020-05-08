@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +8,7 @@
     <link rel="stylesheet" href="./app/src/css/text-to-speech.css">
     <title>Powerful Text to Speech</title>
 </head>
-
 <body>
-
-
     <div class="container">
 
         <div class="row d-flex justify-content-center mt-5">
@@ -21,11 +17,12 @@
                 <div class="card shadow-s-1">
                     <div class="card-header display-5"> Powerful Text to Speech </div>
                     <div class="card-body" id="dummy-content">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium fugit quia, veritatis fugiat aperiam cupiditate dolorem dolores a, molestiae natus maxime!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium fugit quia, veritatis
+                        fugiat aperiam cupiditate dolorem dolores a, molestiae natus maxime!
                     </div>
                     <div class="card-footer">
                         <div class="btn-group">
-                            <div data-toggle="modal" data-target="#exampleModal" class="btn btn-dark ripple-effect">
+                            <div data-toggle="modal" data-target="#play-setting" class="btn btn-dark ripple-effect">
                                 Setting </div>
                             <div onClick="speak('#dummy-content')" class="btn btn-dark ripple-effect"> Play </div>
                         </div>
@@ -42,12 +39,13 @@
                         <div>
                             <h3>Web Development</h3>
                         </div>
-                        <div id="Development"> We provide a range of web application development services, from simple content apps to complex ecommerce apps. </div>
+                        <div id="Development"> We provide a range of web application development services, from simple
+                            content apps to complex ecommerce apps. </div>
                         <div class=" d-inline">
-                            <span class="icon-ui" data-toggle="modal" data-target="#exampleModal"><img
-                                    src="./app/src/img/setting.png" alt="plau audio"></span>
+                            <span class="icon-ui" data-toggle="modal" data-target="#play-setting"><img
+                                    src="./app/src/img/setting.png" alt="play audio"></span>
                             <span class="icon-ui" onClick="speak('#Development')"> <img src="./app/src/img/play.png"
-                                    alt="plau audio"> </span>
+                                    alt="play audio"> </span>
                         </div>
                     </div>
 
@@ -55,11 +53,13 @@
                         <div>
                             <h3>Web Designing</h3>
                         </div>
-                        <div id="pdfs">Professional looking website designs spiced up with smart user interface & unique layouts.
+                        <div id="pdfs">Professional looking website designs spiced up with smart user interface & unique
+                            layouts.
                         </div>
                         <div class=" d-inline">
-                            <span class="icon-ui" data-toggle="modal" data-target="#exampleModal"><img
-                                    src="./app/src/img/setting.png" alt="plau audio"></span> <span class="icon-ui" onClick="speak('#pdfs')"> <img src="./app/src/img/play.png" alt="plau audio"> </span>
+                            <span class="icon-ui" data-toggle="modal" data-target="#play-setting"><img
+                                    src="./app/src/img/setting.png" alt="play audio"></span> <span class="icon-ui"
+                                onClick="speak('#pdfs')"> <img src="./app/src/img/play.png" alt="play audio"> </span>
                         </div>
                     </div>
 
@@ -67,12 +67,13 @@
                         <div>
                             <h3>Dynamic Website</h3>
                         </div>
-                        <div id="Dynamic">Our content management system services ensure speedy access to data enabling you to operate more efficiently.</div>
+                        <div id="Dynamic">Our content management system services ensure speedy access to data enabling
+                            you to operate more efficiently.</div>
                         <div class=" d-inline">
-                            <span class="icon-ui" data-toggle="modal" data-target="#exampleModal"><img
-                                    src="./app/src/img/setting.png" alt="plau audio"></span>
+                            <span class="icon-ui" data-toggle="modal" data-target="#play-setting"><img
+                                    src="./app/src/img/setting.png" alt="play audio"></span>
                             <span class="icon-ui" onClick="speak('#Dynamic')"> <img src="./app/src/img/play.png"
-                                    alt="plau audio"> </span>
+                                    alt="play audio"> </span>
                         </div>
                     </div>
 
@@ -84,11 +85,13 @@
         </div>
 
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="play-setting" tabindex="-1" role="dialog" aria-labelledby="play-settingLabel"
+            aria-hidden="true">
             <div class="modal-dialog modal-sm" role="document">
                 <div class="modal-content col-md-10">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel"><img class="img-logo" src="./app/src/img/voicelogo.png" alt="">
+                        <h5 class="modal-title" id="play-settingLabel"><img class="img-logo"
+                                src="./app/src/img/voicelogo.png" alt="">
 
                     </div>
                     <div class="modal-body">
@@ -98,20 +101,23 @@
                         <div class="row">
                             <!--  Volume / -->
                             <div class="col-md-2"> Volume </div>
-                            <div class="col-md-10"><input type="range" id="volumeSlider" min="0" max="1" value="0.5" step="0.1"></div>
+                            <div class="col-md-10"><input type="range" id="volumeSlider" min="0" max="1" value="0.5"
+                                    step="0.1"></div>
                             <!--  Volume \ -->
                         </div>
                         <div class="row">
                             <!--  Rate / -->
                             <div class="col-md-2"> Rate </div>
-                            <div class="col-md-10"><input type="range" id="rateSlider" min="0" max="1" value="0.6" step="0.1"></div>
+                            <div class="col-md-10"><input type="range" id="rateSlider" min="0" max="1" value="0.6"
+                                    step="0.1"></div>
                             <!--  Rate \ -->
                         </div>
 
                         <div class="row">
                             <!--  Pitch / -->
                             <div class="col-md-2"> Pitch </div>
-                            <div class="col-md-10"><input type="range" id="pitchSlider" min="0" max="2" value="0.5" step="0.1"></div>
+                            <div class="col-md-10"><input type="range" id="pitchSlider" min="0" max="2" value="0.5"
+                                    step="0.1"></div>
                             <!--  Pitch \ -->
 
                             <div class="row justify-content-center">
@@ -142,13 +148,7 @@
 
                         </div>
 
-
-
-
-
-
-
-                        <script src="./app/src/js/contentscript.js"></script>
+                       <script src="./app/src/js/contentscript.js"></script>
                         <script src="./app/node_modules/bootstrap-extra/js/bootstrap.js"></script>
 </body>
 
