@@ -1,0 +1,25 @@
+{
+    "name": "text-to-speech",
+    "version": "1.0.0",
+    "description": "Powerful Text to Speech",
+    "main": "app\\src\\js\\contentscript.js",
+    "scripts": {
+        "test": "init comment"
+    },
+    "extensionDependencies": [
+        "boo"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/IrfanGhuori/Powerful-Text-to-Speech.git"
+    },
+    "keywords": [
+        "Powerful-Text-to-Speech"
+    ],
+    "author": "Muhammad Irfan Abbas",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/IrfanGhuori/Powerful-Text-to-Speech/issues"
+    },
+    "homepage": "https://github.com/IrfanGhuori/Powerful-Text-to-Speech#readme"
+}

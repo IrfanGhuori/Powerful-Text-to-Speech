@@ -1,0 +1,62 @@
+   <div class="simplehtmltext">
+<style>
+#vocalizer_btn.button-w-label.disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: .35;
+    filter: alpha(opacity=35);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+</style>
+<div id="vocalizer" class="jumbotron pad0 pad0bottom" >
+  <div class="wrapper">
+    <div class="row-fluid">
+      <div class="span11">
+        <div>
+          <label><b>Select a voice:</b></label>
+        </div>
+        <div>
+          <select class="form-control" id="vocalizer_voice" style="width:90%">
+            <option label="English (United States): Zoe (conversational), xpremium-high, 22050 Hz, 3.4.0" value="Zoe-Sc">Zoe-Sc, en-us, xpremium-high, 22050, 3.4.0</option>
+
+          </select>      
+        </div>
+      </div>
+    </div>
+    <div class="row-fluid margin20">
+      <div class="span11">
+        <div> <label><b>What would you like Vocalizer to say?</b></label></div>
+
+        <div class="small">
+          <textarea id="vocalizer_input" class="textBox" rows="5" style="width:100%;" type="text" maxlength="10000" placeholder="Hi, how can I help you? Great, no problem. Your transaction is complete. Have a great day. Feel free to type anything else, and even choose another voice."  required="">Hi, how can I help you? Great, no problem. Your transaction is complete. Have a great day. Feel free to type anything else, and even choose another voice.</textarea>
+        </div>
+        <div class="g-recaptcha" data-sitekey="6LdfLHUUAAAAAIHzObzHmUpEUS056HpioHM4E2n1" style="margin-top:10px;" data-callback="checkup" data-expired-callback="checkup" data-error-callback="checkup"></div>
+      </div>
+    </div>
+    <div class="row-fluid margin20">
+      <div class="span11">
+        <div id="vocalizer_btn" class="button-w-label">
+          <a id="vocalizer_play" onclick="CallMe();" href="#!" class="cta cta-bl-border" style="padding-top:4px; padding-bottom:4px;"> Play </a>
+        </div>
+        <div style="display: flex;align-items: center;"> <span id="vocalizer_progress"></span> </div>        
+      </div>
+    </div>
+    <div class="row-fluid margin10">
+      <div class="span11">
+        <p id="vocalizer_error" class="small" style="color:red;"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+
+window.$vocalizer.ux.setup("https://vocalizerplaygroundhost.nuance.com", "vocalizer_play", "vocalizer_progress", "vocalizer_voice", "vocalizer_input", "vocalizer_error");
+function CallMe() {     window.$vocalizer.ux.doSumit(0);  }
+function checkup(){
+	var grecaptchaResponse = '';
+	if(typeof(grecaptcha) !== "undefined") { grecaptchaResponse = grecaptcha.getResponse();}
+	if(grecaptchaResponse.length > 0 ){ $('#vocalizer_btn').removeClass('disabled'); } else { $('#vocalizer_btn').addClass('disabled'); }
+}
+</script></div>
