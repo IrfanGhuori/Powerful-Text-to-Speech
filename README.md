@@ -1,5 +1,5 @@
 # Powerful Text to Speech
-This is an easy way to present your product and make your  website more attractive
+This is an easy way to present your product and make your website more attractive
 
 ### Installation
 
@@ -18,11 +18,13 @@ It needs an ID-tag to read the text area
 ```sh
 <div id="yourId"> Your text or content  </div>
 ```
-Create a button by using the OnClick function
-button example:
+Create a button by using the OnClick function,
+Code example:
 ```sh
+<div onclick="speak(#yourId)"> Your text or content  </div>
+
 <button type="button" onclick="speak(#yourId)"> Read this  </button> or
-<div onclick="speak(#yourId)"> Read this  </div>
+
 ```
 Create a button for change voice and control reading speed
 ```sh
