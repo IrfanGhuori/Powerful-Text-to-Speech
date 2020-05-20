@@ -15,16 +15,17 @@ add script and style sheet
 
 Basic code example:
 It needs an ID-tag to read the text area
+
 ```sh
 <div id="yourId"> Your text or content  </div>
 ```
+
 Create a button by using the OnClick function,
-Code example:
+button example:
+
 ```sh
-<div onclick="speak(#yourId)"> Your text or content  </div>
-
+<div onclick="speak(#yourId)"> Read this  </div>
 <button type="button" onclick="speak(#yourId)"> Read this  </button> or
-
 ```
 Create a button for change voice and control reading speed
 ```sh
